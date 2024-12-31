@@ -1,4 +1,4 @@
-*{
+/* *{
   margin:0;
   padding: 0;
   box-sizing: border-box;
@@ -52,4 +52,67 @@ button{
   border: none;
   padding: 10px 20px;
   color: antiquewhite;
+} */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
+
+nav {   
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  width:100%;
+  padding: 10px 20px;
+  position: fixed;
+}
+
+nav h1{
+  
+  margin-left: 1rem;
+}
+
+nav ol{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:20px;
+  list-style: none;
+  margin-right: 1rem;
+}
+
+nav ol li {
+  text-decoration:  none;
+}
+
+nav ol li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+nav div h3 a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.Container{
+  background-image: url(https://img.freepik.com/free-photo/blue-mountains-famous-tourism-scenery-lijiang_1417-1143.jpg?t=st=1735485578~exp=1735489178~hmac=effc98482e7c29b568984b00e8c28e2a528b0df2f2cd61ed7c78d273c7b97161&w=740);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+footer{
+  background-color: brown;
+  padding:10px 20px;
+  text-align: center;
+  position: fixed;
+  bottom:0;
+  width: 100%;
+}
+
+

@@ -1,10 +1,10 @@
 import HalfBoil from './HalfBoil.jsx';
-function Egg({name})
+function Egg( )
 {
   return(
     <div>
       <h1>This is egg</h1>
-      <HalfBoil  name={name}/>
+      <HalfBoil   />
     </div>
     
   )

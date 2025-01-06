@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 function Apps(){
   return(
     <div>
-       
+       <h1>HELLO USER</h1>
             <Router>
                 <Routes>
                     <Route path="/" element={<Users/>}/>

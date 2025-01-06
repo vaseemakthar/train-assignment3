@@ -1,4 +1,4 @@
-/* General Styles for the Gallery */
+/* 
 .imagegallery {
   background-color:  palevioletred;
   width: 100%;
@@ -21,7 +21,7 @@
   gap: 10px;
 }
 
-/* Styles for Individual Images */
+
 .imagegallery img {
   width: 60%;
   height: 60%;
@@ -34,7 +34,7 @@
   transform: scale(1.05);
 }
 
-/* Media Queries */
+
 @media (max-width: 1024px) {
   .imagegallery-container {
     grid-template-columns: repeat(2, 1fr);
@@ -49,4 +49,4 @@
     width: 80%;
     height: 80%; 
    }
-}
+} */

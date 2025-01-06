@@ -1,4 +1,4 @@
-/* Overall container styling
+
 .created-user-container {
   display: flex;
   justify-content: center;
@@ -6,7 +6,7 @@
   height: 100vh;
   background-color: #f7f9fc;
   font-family: Arial, sans-serif;
-}
+} 
 
 /* Form styling */
 .created-user-form {
@@ -68,4 +68,4 @@
 
 .form-submit-button:hover {
   background-color: #0056b3;
-} */
+} 

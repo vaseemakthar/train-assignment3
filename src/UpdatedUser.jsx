@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import { useNavigate , useParams } from 'react-router-dom';
 import axios from 'axios';
+import "./update.css"
 
 function UpdatedUser(){
 
@@ -21,17 +22,42 @@ function UpdatedUser(){
 
 
   return(
-    <div>
-      <form onSubmit={UpdateUser}>
-          <label>name</label>
-          <input type="text" value={name} onChange={(e)=>setName(e.target.value)}/><br/>
-          <label>email</label>
-          <input type="text" value={email} onChange={(e)=>setEmail(e.target.value)}/><br/>
-          <label>address</label>
-          <input type="text" value={address} onChange={(e)=>setAddress(e.target.value)}/>
-          <button>update</button>
-       </form>
+    <div className="form-container">
+  <form className="form" onSubmit={UpdateUser}>
+    <div className="form-group">
+      <label className="form-label" htmlFor="name">Name</label>
+      <input 
+        id="name" 
+        type="text" 
+        className="form-input" 
+        value={name} 
+        onChange={(e) => setName(e.target.value)} 
+      />
     </div>
+    <div className="form-group">
+      <label className="form-label" htmlFor="email">Email</label>
+      <input 
+        id="email" 
+        type="text" 
+        className="form-input" 
+        value={email} 
+        onChange={(e) => setEmail(e.target.value)} 
+      />
+    </div>
+    <div className="form-group">
+      <label className="form-label" htmlFor="address">Address</label>
+      <input 
+        id="address" 
+        type="text" 
+        className="form-input" 
+        value={address} 
+        onChange={(e) => setAddress(e.target.value)} 
+      />
+    </div>
+    <button className="form-button">Update</button>
+  </form>
+</div>
+
   )
 }
 export default UpdatedUser;
